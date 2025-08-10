@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPULENCE | Luxury Brand</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', serif;
+        }
+        body {
+            background-color: #f5f1e8;
+            color: #2a2118;
+            line-height: 1.6;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-left: 1px solid #d4c9b8;
+            border-right: 1px solid #d4c9b8;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            border-bottom: 1px solid #d4c9b8;
+            padding-bottom: 30px;
+        }
+        .hero-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            margin-bottom: 30px;
+            border: 10px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 4rem;
+            letter-spacing: 5px;
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.8rem;
+            font-weight: normal;
+            letter-spacing: 8px;
+            margin-bottom: 40px;
+        }
+        h3 {
+            font-size: 1.2rem;
+            font-weight: normal;
+            letter-spacing: 3px;
+            margin: 40px 0 20px;
+            border-bottom: 1px solid #d4c9b8;
+            padding-bottom: 10px;
+        }
+        p {
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        .section {
+            margin-bottom: 60px;
+        }
+        ul {
+            list-style-type: none;
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 20px;
+        }
+        li:before {
+            content: "—";
+            position: absolute;
+            left: 0;
+        }
+        .highlight {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 40px 0;
+        }
+        .gallery img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+        .feature-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            margin: 30px 0;
+            border: 15px solid white;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+        footer {
+            text-align: center;
+            margin-top: 80px;
+            border-top: 1px solid #d4c9b8;
+            padding-top: 30px;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            body { padding: 20px; }
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 1.3rem; }
+            .gallery { grid-template-columns: 1fr; }
+            .hero-image, .feature-image { height: 250px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Luxury Atelier" class="hero-image">
+        <h1>VICTORIA</h1>
+        <h2>HAUTE COUTURE</h2>
+    </header>
+    
+    <section>
+        <h3>HI I'M VICTORIA</h3>
+        <p>A master couturier redefining luxury through artistic innovation and uncompromising craftsmanship.</p>
+        <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Design Process" class="feature-image">
+    </section>
+    
+    <div class="section">
+        <h3>COLLECTIONS</h3>
+        <ul>
+            <li><span class="highlight">New silhouettes and textiles</span></li>
+            <li><span class="highlight">WHISPERS OF REBELLION</span></li>
+            <li><span class="highlight">FOR THE DISCERNING INDIVIDUAL</span></li>
+        </ul>
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Collection 1">
+            <img src="https://images.unsplash.com/photo-1479064555552-3ef4979f8908?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Collection 2">
+            <img src="https://images.unsplash.com/photo-1554412933-514a83d2f3c8?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Collection 3">
+        </div>
+    </div>
+    
+    <div class="section">
+        <h3>FABRIC INNOVATION</h3>
+        <h3>FABRIC INNOVATION</h3>
+        <img src="https://images.unsplash.com/photo-1516762689617-e1cffcef479d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Textile Detail" class="feature-image">
+    </div>
+    
+    <footer>
+        © 2023 VICTORIA HAUTE COUTURE. ALL RIGHTS RESERVED.
+    </footer>
+</body>
+</html>
